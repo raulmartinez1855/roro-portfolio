@@ -2,19 +2,21 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
+import Menu from '../components/Menu'
 import Header from '../components/header'
-import './index.scss'
+import './index.css'
 
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Sample WebSite' },
+        { name: 'keywords', content: 'react, gatsby' },
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
+    <Menu />
     <div
       style={{
         margin: '0 auto',
