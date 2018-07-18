@@ -1,5 +1,5 @@
 ---
-path: "blog/posts/3"
+path: "/blog/posts/3"
 date: "07-17-2018"
 title: "Third Post"
 author: "Raul Martinez"

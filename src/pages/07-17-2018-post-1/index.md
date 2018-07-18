@@ -1,5 +1,5 @@
 ---
-path: "/blog/posts/hello-world"
+path: "/blog/posts/1"
 date: "07-17-2018"
 title: "First Post"
 author: "Raul Martinez"
