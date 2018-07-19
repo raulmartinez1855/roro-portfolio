@@ -1,9 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
-const BlogPage = ({data}) => (
+const BlogPage = ({data}) => (  
   <div>
     <h1>All Posts</h1>
-    {data.allMarkdownRemark.edges.map(post => (
+    {data
+      .allMarkdownRemark
+      .edges
+      .sort((a, b) => parseInt(b.node.frontmatter.path.split('/')[3]) - parseInt(a.node.frontmatter.path.split('/')[3])) 
+      .map(post => (
       <div key={post.node.id}>
         <h3>{post.node.frontmatter.title}</h3>
         <small>Posted by {post.node.frontmatter.author} on {post.node.frontmatter.date}</small>
@@ -14,7 +18,8 @@ const BlogPage = ({data}) => (
         <br />
         <hr />
       </div>
-    ))}
+      ))
+    }
   </div>
 )
 

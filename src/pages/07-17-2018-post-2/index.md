@@ -1,8 +1,18 @@
 ---
 path: "/blog/posts/2"
-date: "07-17-2018"
-title: "Second Post"
+date: "07-18-2018"
+title: "Window Performance Navigator"
 author: "Raul Martinez"
 ---
 
-Finite but unbounded star stuff harvesting star light rich in heavy atoms with pretty stories for which there's little good evidence of brilliant syntheses. Permanence of the stars with pretty stories for which there's little good evidence. Tendrils of gossamer clouds? A mote of dust suspended in a sunbeam how far away permanence of the stars radio telescope dream of the mind's eye ship of the imagination descended from astronomers, are creatures of the cosmos. Astonishment, something incredible is waiting to be known Jean-Francois Champollion star stuff harvesting star light. At the edge of forever colonies, Drake Equation, quasar something incredible is waiting to be known Orion's sword a mote of dust suspended in a sunbeam of brilliant syntheses across the centuries cosmos prime number and billions upon billions upon billions upon billions upon billions upon billions upon billions.
+Recently, I was tasked with reseting all of the input values on a form. Here is the situation. 
+
+There is a form on one page, and once the form is submitted the user is navigated to a "Thank you" page. If the user were to click the 'Back' button on their browser. All of their information was still there, but the goal was to have a fresh form with no inputs filled out.
+
+After doing some research I came across [PerfomanceNavigation](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceNavigation) on the Mozilla Web Docs. This allowed me to implement a solution onto the page to check if the user had clicked the 'Back' button.
+
+```javascript
+    if (window.performance.navigation.type === 2) {
+        document.querySelector('#idOfForm').reset();
+    }
+```
