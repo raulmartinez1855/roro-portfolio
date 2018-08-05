@@ -1,0 +1,33 @@
+.menu-component {
+  padding: 0 1rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background: #000;
+  align-items: center;
+  width: 100%;
+  h1 {
+    font: 1.5rem $font-mont;
+    color: #fff;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    li {
+      font: 1rem $font-mont;
+      margin: 1.5rem 1rem;
+      a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          color: rgb(173, 167, 255);
+        }
+      }
+    }
+  }
+}

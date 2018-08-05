@@ -1,0 +1,35 @@
+// FONT IMPORTS
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+
+// FONT VARIABLES
+$font-mont: 'Montserrat', sans-serif;
+$font-open-sans: 'Open Sans', sans-serif;
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: $font-open-sans;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  width: 100%;
+}
+
+// COMPONENT IMPORTS
+@import 'menu';
+@import 'hamburgerButton';
+@import 'dropDown';

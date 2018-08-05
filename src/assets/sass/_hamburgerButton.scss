@@ -1,0 +1,42 @@
+.hamburger {
+  display: inline-block;
+  background: #000;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  &:focus {
+    outline: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  .bar-1,
+  .bar-2,
+  .bar-3 {
+    background: #fff;
+    height: 0.3rem;
+    width: 2.9rem;
+    border-radius: 1rem;
+    transition: 500ms;
+  }
+  .bar-2 {
+    margin: 0.5rem auto;
+  }
+  &.change {
+    padding-top: 0.4rem;
+    .bar-1 {
+      -webkit-transform: rotate(-45deg) translate(-14px, 0px);
+      transform: rotate(-45deg) translate(-14px, 0px);
+      width: 2rem;
+    }
+    .bar-2 {
+      opacity: 0;
+    }
+    .bar-3 {
+      -webkit-transform: rotate(45deg) translate(-2px, -17px);
+      transform: rotate(45deg) translate(-2px, -17px);
+      width: 2rem;
+    }
+  }
+}

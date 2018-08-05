@@ -1,0 +1,31 @@
+.dropdown-menu {
+  position: absolute;
+  width: 100%;
+  top: 3.7rem;
+  left: 0;
+  background: #000;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    flex-flow: column;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    li {
+      font: 1rem $font-mont;
+      margin: 1.5rem 1rem;
+      a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          color: rgb(173, 167, 255);
+        }
+      }
+    }
+  }
+}
