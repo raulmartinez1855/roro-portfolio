@@ -1,15 +1,24 @@
 .dropdown-menu {
   position: absolute;
   width: 100%;
-  top: 3.7rem;
+  top: 2.7rem;
   left: 0;
   background: #000;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 400ms linear;
+  &.show {
+    max-height: 100vh;
+    ul {
+      display: flex;
+    }
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }
   ul {
     list-style-type: none;
-    display: flex;
+    display: none;
     padding: 0;
     flex-flow: column;
     align-items: center;

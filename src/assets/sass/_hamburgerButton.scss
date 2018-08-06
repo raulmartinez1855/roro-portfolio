@@ -18,7 +18,7 @@
     height: 0.3rem;
     width: 2.9rem;
     border-radius: 1rem;
-    transition: 500ms;
+    transition: 400ms;
   }
   .bar-2 {
     margin: 0.5rem auto;
@@ -34,8 +34,8 @@
       opacity: 0;
     }
     .bar-3 {
-      -webkit-transform: rotate(45deg) translate(-2px, -17px);
-      transform: rotate(45deg) translate(-2px, -17px);
+      -webkit-transform: rotate(45deg) translate(-2px, -18px);
+      transform: rotate(45deg) translate(-2px, -18px);
       width: 2rem;
     }
   }

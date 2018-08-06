@@ -2,8 +2,10 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const Dropdown = props => {
+  const classes = props.open ? 'dropdown-menu show' : 'dropdown-menu'
+
   return (
-    <div className="dropdown-menu">
+    <div className={classes}>
       <ul>
         <li>
           <Link onClick={props.close} to="/">

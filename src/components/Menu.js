@@ -6,9 +6,12 @@ import Link from 'gatsby-link'
 import '../assets/sass/index.scss'
 
 class Menu extends Component {
-  navRef = React.createRef()
-
   state = { open: false }
+
+  componentDidMount() {
+    console.log(this.menuDiv)
+    this.applySticky()
+  }
 
   isOpen = () => {
     this.setState(prevState => {
@@ -20,13 +23,24 @@ class Menu extends Component {
     this.setState({ open: false })
   }
 
+  applySticky = () => {
+    window.addEventListener('scroll', () => {
+      const nav = this.menuDiv
+      const sticky = nav.offsetTop
+      const isPageDown = window.pageYOffset >= sticky
+      isPageDown ? nav.classList.add('sticky') : null
+    })
+  }
+
   render() {
-    let dropDown = <Dropdown close={this.closeNav} />
+    // let dropDown = <Dropdown close={this.closeNav} />
     return (
-      <div className="menu-component">
-        <h1>RAUL</h1>
+      <div ref={ele => (this.menuDiv = ele)} className="menu-component">
+        <h1>
+          <Link to="/">RAUL</Link>
+        </h1>
         <HamburgerButton open={this.state.open} click={this.isOpen} />
-        {this.state.open ? dropDown : null}
+        <Dropdown open={this.state.open} close={this.closeNav} />
         <ul className="menu-component__links">
           <li>
             <Link to="/">Home</Link>
