@@ -1,25 +1,31 @@
 import React from 'react'
 import Link from 'gatsby-link'
-const BlogPage = ({data}) => (  
-  <div>
-    <h1>All Posts</h1>
-    {data
-      .allMarkdownRemark
-      .edges
-      .sort((a, b) => parseInt(b.node.frontmatter.path.split('/')[3]) - parseInt(a.node.frontmatter.path.split('/')[3])) 
-      .map(post => (
-      <div key={post.node.id}>
-        <h3>{post.node.frontmatter.title}</h3>
-        <small>Posted by {post.node.frontmatter.author} on {post.node.frontmatter.date}</small>
-        <br />
-        <br />
-        <Link to={post.node.frontmatter.path}>Read More</Link>
-        <br />
-        <br />
-        <hr />
-      </div>
-      ))
-    }
+import BlogHeader from '../components/BlogHeader'
+
+const BlogPage = ({ data }) => (
+  <div className="blog-index">
+    <BlogHeader />
+    <div className="blog-cards-container">
+      {data.allMarkdownRemark.edges
+        .sort(
+          (a, b) =>
+            parseInt(b.node.frontmatter.path.split('/')[3]) -
+            parseInt(a.node.frontmatter.path.split('/')[3])
+        )
+        .map(post => (
+          <div className="blog-card" key={post.node.id}>
+            <img src={post.node.frontmatter.image} alt="" />
+            <div className="card-body">
+              <h3>{post.node.frontmatter.title}</h3>
+              <div className="card-content">
+                <p>Posted by: {post.node.frontmatter.author}</p>
+                <p> on {post.node.frontmatter.date}</p>
+                <Link to={post.node.frontmatter.path}>Read More</Link>
+              </div>
+            </div>
+          </div>
+        ))}
+    </div>
   </div>
 )
 
@@ -34,6 +40,8 @@ export const pageQuery = graphql`
             path
             date
             author
+            image
+            desc
           }
         }
       }

@@ -4,6 +4,7 @@
 // FONT VARIABLES
 $font-mont: 'Montserrat', sans-serif;
 $font-open-sans: 'Open Sans', sans-serif;
+$p-color: #484747;
 
 html {
   -ms-text-size-adjust: 100%;
@@ -16,6 +17,17 @@ html {
 :after,
 :before {
   box-sizing: border-box;
+}
+
+.section-title {
+  font: 3rem $font-mont;
+  &:after {
+    content: '';
+    display: block;
+    width: 4rem;
+    border-top: 0.2rem solid #000;
+    margin: 0.2rem 0 0.2rem;
+  }
 }
 
 body {
@@ -34,3 +46,8 @@ body {
 @import 'hamburgerButton';
 @import 'dropDown';
 @import 'homepage';
+@import 'footer';
+@import 'about';
+@import 'blogPostLayout';
+@import 'blogIndex';
+@import 'blogHeader';

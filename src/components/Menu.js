@@ -8,11 +8,6 @@ import '../assets/sass/index.scss'
 class Menu extends Component {
   state = { open: false }
 
-  componentDidMount() {
-    console.log(this.menuDiv)
-    this.applySticky()
-  }
-
   isOpen = () => {
     this.setState(prevState => {
       return { open: !prevState.open }
@@ -23,17 +18,7 @@ class Menu extends Component {
     this.setState({ open: false })
   }
 
-  applySticky = () => {
-    window.addEventListener('scroll', () => {
-      const nav = this.menuDiv
-      const sticky = nav.offsetTop
-      const isPageDown = window.pageYOffset >= sticky
-      isPageDown ? nav.classList.add('sticky') : null
-    })
-  }
-
   render() {
-    // let dropDown = <Dropdown close={this.closeNav} />
     return (
       <div ref={ele => (this.menuDiv = ele)} className="menu-component">
         <h1>

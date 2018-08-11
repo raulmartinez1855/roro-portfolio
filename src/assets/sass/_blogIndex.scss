@@ -1,0 +1,29 @@
+.blog-index {
+  margin-top: 2rem;
+  .blog-cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .blog-card {
+      background: lightcoral;
+      margin: 1rem;
+      width: 20rem;
+      height: 40rem;
+      img {
+        width: 20rem;
+      }
+      .card-body {
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem;
+        h3 {
+          margin: 0;
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+}

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Menu from '../components/Menu'
+import Footer from '../components/Footer'
 import '../assets/sass/index.scss'
 
 const Layout = ({ children, data }) => (
@@ -16,6 +17,7 @@ const Layout = ({ children, data }) => (
     />
     <Menu />
     <div>{children()}</div>
+    <Footer />
   </div>
 )
 
