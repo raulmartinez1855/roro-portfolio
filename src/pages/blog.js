@@ -14,13 +14,24 @@ const BlogPage = ({ data }) => (
         )
         .map(post => (
           <div className="blog-card" key={post.node.id}>
-            <img src={post.node.frontmatter.image} alt="" />
             <div className="card-body">
-              <h3>{post.node.frontmatter.title}</h3>
-              <div className="card-content">
-                <p>Posted by: {post.node.frontmatter.author}</p>
-                <p> on {post.node.frontmatter.date}</p>
-                <Link to={post.node.frontmatter.path}>Read More</Link>
+              <div className="card-top">
+                <div className="card-header">
+                  <div className="post-info">
+                    <span>{post.node.frontmatter.date}</span>
+                    <span>{post.node.frontmatter.author}</span>
+                  </div>
+                  <div className="post-image">
+                    <img src={post.node.frontmatter.image} alt="" />
+                  </div>
+                </div>
+                <div className="card-content">
+                  <h2>{post.node.frontmatter.title}</h2>
+                  <p>{post.node.frontmatter.desc}</p>
+                </div>
+              </div>
+              <div className="center">
+                <Link to={post.node.frontmatter.path}>READ MORE</Link>
               </div>
             </div>
           </div>

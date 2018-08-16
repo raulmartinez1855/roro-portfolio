@@ -10,7 +10,7 @@ export default function Template({ data }) {
     <div className="blog-post-layout">
       <BlogHeader />
       <Link to="/blog">Back</Link>
-      <img src={post.frontmatter.image} alt="" />
+      {/* <img src={post.frontmatter.image} alt="" /> */}
       <h1>{post.frontmatter.title}</h1>
       {console.log(post)}
       <h4>

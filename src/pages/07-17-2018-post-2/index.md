@@ -1,11 +1,10 @@
 ---
 path: '/blog/posts/2'
 date: '07-18-2018'
-title: 'Window Performance Navigator'
+title: 'Window Navigator'
 author: 'Raul Martinez'
 image: '/static/Javascript.png'
-desc:
-  'Recently, I was tasked with reseting all of the input values on a form. Here is the situation...'
+desc: 'Conditionally reseting all of the input values on a form...'
 ---
 
 Recently, I was tasked with reseting all of the input values on a form. Here is the situation.
