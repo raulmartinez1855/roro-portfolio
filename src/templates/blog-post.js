@@ -9,14 +9,23 @@ export default function Template({ data }) {
   return (
     <div className="blog-post-layout">
       <BlogHeader />
-      <Link to="/blog">Back</Link>
-      {/* <img src={post.frontmatter.image} alt="" /> */}
-      <h1>{post.frontmatter.title}</h1>
-      {console.log(post)}
-      <h4>
-        Posted by {post.frontmatter.author} on {post.frontmatter.date}
-      </h4>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <div className="blog-content-container">
+        <div className="blog-content-copy">
+          <h1 className="section-title">{post.frontmatter.title}</h1>
+          <p className="post-details">
+            posted: <span>{post.frontmatter.date}</span>
+          </p>
+          <p className="post-details">
+            by: <span>{post.frontmatter.author}</span>
+          </p>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <Link to="/blog">
+            <button>
+              <span>Back</span>
+            </button>
+          </Link>
+        </div>
+      </div>
     </div>
   )
 }
