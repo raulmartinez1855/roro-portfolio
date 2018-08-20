@@ -2,12 +2,14 @@ import React from 'react'
 import Link from 'gatsby-link'
 import '../assets/sass/index.scss'
 import BlogHeader from '../components/BlogHeader'
+import Menu from '../components/Menu'
 
 export default function Template({ data }) {
   const post = data.markdownRemark
 
   return (
     <div className="blog-post-layout">
+      <Menu />
       <BlogHeader />
       <div className="blog-content-container">
         <div className="blog-content-copy">

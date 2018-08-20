@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-
-import Menu from '../components/Menu'
 import Footer from '../components/Footer'
 import '../assets/sass/index.scss'
 
@@ -15,7 +13,6 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'react, gatsby' },
       ]}
     />
-    <Menu />
     <div>{children()}</div>
     <Footer />
   </div>

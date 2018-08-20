@@ -18,6 +18,12 @@ class Menu extends Component {
     this.setState({ open: false })
   }
 
+  handleClick = e => {
+    e.preventDefault()
+    const ref = e.currentTarget.name
+    this.props.scroll(this.props.positions[ref])
+  }
+
   render() {
     return (
       <div ref={ele => (this.menuDiv = ele)} className="menu-component">
@@ -25,16 +31,25 @@ class Menu extends Component {
           <Link to="/">RAUL</Link>
         </h1>
         <HamburgerButton open={this.state.open} click={this.isOpen} />
-        <Dropdown open={this.state.open} close={this.closeNav} />
+        <Dropdown
+          positions={this.props.positions}
+          scroll={this.handleClick}
+          open={this.state.open}
+          close={this.closeNav}
+        />
         <ul className="menu-component__links">
           <li>
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link name="aboutRef" onClick={this.handleClick} to="#">
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link name="projectsRef" onClick={this.handleClick} to="#">
+              Projects
+            </Link>
           </li>
           <li>
             <Link to="/blog">Blog</Link>

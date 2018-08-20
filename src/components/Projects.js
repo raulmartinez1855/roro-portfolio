@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
 
-class About extends Component {
+class Projects extends Component {
   componentDidMount() {
-    this.props.find('aboutRef', this.aboutRef.offsetTop)
+    this.props.find('projectsRef', this.projectsRef.offsetTop)
   }
   render() {
     return (
       <div
         ref={e => {
-          this.aboutRef = e
+          this.projectsRef = e
         }}
-        className="about"
+        className="projects"
       >
-        <h2 className="section-title">About Me</h2>
+        <h2 className="section-title">Projects</h2>
         <p>
           Hello, I am Raul. Thank you for coming to my page. I am a developer
           out of Miami, FL. Currently, I work as a Front End Developer for
@@ -23,13 +23,13 @@ class About extends Component {
           I began coding fulltime when I joined the Wyncode Academy in their
           19th cohort, on September 19th, 2017. I am very thankful to be in the
           development field because I am able to work in what I am passionate
-          about. It allows me endless creativity, and I make a difference by
+          projects. It allows me endless creativity, and I make a difference by
           solving problems. The best part is that I will never know everything
-          their is to know about development, so I can always improve.
+          their is to know projects development, so I can always improve.
         </p>
         <p>
-          If you would like to know more about my professional background, here
-          is a copy of my resume:
+          If you would like to know more projects my professional background,
+          here is a copy of my resume:
         </p>
         <a download href="/static/RAULMARTINEZ_Resume.pdf">
           <button>Resume</button>
@@ -45,4 +45,4 @@ class About extends Component {
   }
 }
 
-export default About
+export default Projects

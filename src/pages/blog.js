@@ -1,9 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import BlogHeader from '../components/BlogHeader'
+import Menu from '../components/Menu'
 
 const BlogPage = ({ data }) => (
   <div className="blog-index">
+    <Menu />
     <BlogHeader />
     <div className="blog-cards-container">
       {data.allMarkdownRemark.edges

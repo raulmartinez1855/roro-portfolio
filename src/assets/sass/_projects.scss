@@ -1,0 +1,26 @@
+.projects {
+  margin: 4rem 1rem 1rem 1rem;
+  button {
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    height: 3.5rem;
+    width: 10rem;
+    border-radius: 0.4rem;
+    background: #1ebba3;
+    transition: background-color 200ms ease-in;
+    overflow: hidden;
+    color: #fff;
+    font-size: 2rem;
+    &:hover {
+      background: #6fbcf9;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  p {
+    font-size: 1.2rem;
+    color: $p-color;
+  }
+}
