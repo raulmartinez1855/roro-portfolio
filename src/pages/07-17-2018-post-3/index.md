@@ -3,7 +3,7 @@ path: '/blog/posts/3'
 date: '08-23-2018'
 title: 'Done!!!'
 author: 'Raul Martinez'
-image: '/static/Javascript.png'
+image: 'Javascript.png'
 desc: 'After three weeks of developing this new site on my spare time...'
 ---
 

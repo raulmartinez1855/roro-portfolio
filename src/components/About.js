@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Resume from '../assets/images/RAULMARTINEZ_Resume.pdf'
 
 class About extends Component {
   componentDidMount() {
@@ -31,7 +32,7 @@ class About extends Component {
           If you would like to know more about my professional background, here
           is a copy of my resume:
         </p>
-        <a download href="/static/RAULMARTINEZ_Resume.pdf">
+        <a download href={Resume}>
           <button>Resume</button>
         </a>
         <p>

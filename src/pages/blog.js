@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import BlogHeader from '../components/BlogHeader'
 import Menu from '../components/Menu'
+import { withPrefix } from 'gatsby-link'
 
 const BlogPage = ({ data }) => (
   <div className="blog-index">
@@ -24,7 +25,7 @@ const BlogPage = ({ data }) => (
                     <span>{post.node.frontmatter.author}</span>
                   </div>
                   <div className="post-image">
-                    <img src={post.node.frontmatter.image} alt="" />
+                    <img src={withPrefix(post.node.frontmatter.image)} alt="" />
                   </div>
                 </div>
                 <div className="card-content">
