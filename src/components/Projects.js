@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 
 class Projects extends Component {
   componentDidMount() {
-    this.props.find('projectsRef', this.projectsRef.offsetTop)
+    setTimeout(() => {
+      this.props.findPositions('projectsRef', this.projectsRef.offsetTop)
+    }, 0)
   }
   render() {
     return (

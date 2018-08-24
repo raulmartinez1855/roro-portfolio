@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 class About extends Component {
   componentDidMount() {
-    this.props.find('aboutRef', this.aboutRef.offsetTop)
+    this.props.findPositions('aboutRef', this.aboutRef.offsetTop)
   }
   render() {
     return (

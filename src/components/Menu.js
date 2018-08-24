@@ -46,11 +46,11 @@ class Menu extends Component {
               About
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link name="projectsRef" onClick={this.handleClick} to="#">
               Projects
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/blog">Blog</Link>
           </li>

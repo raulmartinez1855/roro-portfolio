@@ -22,11 +22,11 @@ const Dropdown = props => {
             About
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link name="projectsRef" onClick={handleClick} to="#">
             Projects
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link onClick={props.close} to="/blog">
             Blog

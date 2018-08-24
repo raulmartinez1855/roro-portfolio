@@ -1,10 +1,19 @@
 ---
 path: '/blog/posts/3'
-date: '07-17-2018'
-title: 'Third Post'
+date: '08-23-2018'
+title: 'Done!!!'
 author: 'Raul Martinez'
 image: '/static/Javascript.png'
-desc: 'Finite but unbounded star stuff harvesting star light rich in heavy atoms'
+desc: 'After three weeks of developing this new site on my spare time...'
 ---
 
-Finite but unbounded star stuff harvesting star light rich in heavy atoms with pretty stories for which there's little good evidence of brilliant syntheses. Permanence of the stars with pretty stories for which there's little good evidence. Tendrils of gossamer clouds? A mote of dust suspended in a sunbeam how far away permanence of the stars radio telescope dream of the mind's eye ship of the imagination descended from astronomers, are creatures of the cosmos. Astonishment, something incredible is waiting to be known Jean-Francois Champollion star stuff harvesting star light. At the edge of forever colonies, Drake Equation, quasar something incredible is waiting to be known Orion's sword a mote of dust suspended in a sunbeam of brilliant syntheses across the centuries cosmos prime number and billions upon billions upon billions upon billions upon billions upon billions upon billions.
+After three weeks of developing this new site on my spare time. I am finally done!!!
+
+Well... not "done." But, I am at a point where I feel comfortable publishing the site.
+
+It has been a really fun experience to make my portfolio. Especially, since I made it from scratch. I wanted to make sure I did not use any css frameworks.
+
+In addition, I used [Gatsby.js](https://www.gatsbyjs.org/)** to make the site which I did not have prior experience with. However, I do have experience with React so using Gatsby has been very fun.
+
+This is my first time running and publishing to a blog. I plan to keep it as an open format focused around code. I will be posting at least once per week.
+

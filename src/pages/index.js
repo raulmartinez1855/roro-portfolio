@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import About from '../components/About'
 import Menu from '../components/Menu'
-import Projects from '../components/Projects'
+// import Projects from '../components/Projects'
 
 class IndexPage extends Component {
   state = {
@@ -15,10 +15,9 @@ class IndexPage extends Component {
     })
   }
 
-  findPositions = (refName, position) => {
+  findPositions = (refName, scrollLength) => {
     const positions = { ...this.state.positions }
-    console.log(positions)
-    positions[refName] = position
+    positions[refName] = scrollLength
     this.setState({ positions })
   }
 
@@ -33,8 +32,8 @@ class IndexPage extends Component {
             <h2>Hello! I am Raul. I am a Developer.</h2>
           </div>
         </div>
-        <About find={this.findPositions} />
-        <Projects find={this.findPositions} />
+        <About findPositions={this.findPositions} />
+        {/* <Projects findPositions={this.findPositions} /> */}
       </div>
     )
   }
