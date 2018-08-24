@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import About from '../components/About'
 import Menu from '../components/Menu'
 // import Projects from '../components/Projects'
+import MartinezRaul from '../assets/images/Optimized-MartinezRaul.jpg'
 
 class IndexPage extends Component {
   state = {
@@ -27,7 +28,7 @@ class IndexPage extends Component {
         <Menu positions={this.state.positions} scroll={this.scroll} />
         <div className="indexPage">
           <div className="image-container">
-            <img src="/static/Optimized-MartinezRaul.jpg" alt="" />
+            <img src={MartinezRaul} alt="" />
             <div className="dark-container" />
             <h2>Hello! I am Raul. I am a Developer.</h2>
           </div>
