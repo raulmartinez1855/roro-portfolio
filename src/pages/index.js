@@ -9,11 +9,18 @@ class IndexPage extends Component {
     positions: {},
   }
 
-  scroll = ref => {
-    window.scrollTo({
-      top: ref - 70,
-      behavior: 'smooth',
-    })
+  componentDidUpdate() {
+    this.scroll()
+  }
+  scroll = () => {
+    const isScroll = window.location.search === '?scroll=about'
+    const position = this.state.positions.aboutRef
+    if (isScroll) {
+      window.scrollTo({
+        top: position - 70,
+        behavior: 'smooth',
+      })
+    }
   }
 
   findPositions = (refName, scrollLength) => {

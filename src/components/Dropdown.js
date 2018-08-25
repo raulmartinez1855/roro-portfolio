@@ -4,9 +4,8 @@ import Link from 'gatsby-link'
 const Dropdown = props => {
   const classes = props.open ? 'dropdown-menu show' : 'dropdown-menu'
 
-  const handleClick = e => {
+  const handleClick = () => {
     props.close()
-    props.scroll(e)
   }
 
   return (
@@ -18,7 +17,7 @@ const Dropdown = props => {
           </Link>
         </li>
         <li>
-          <Link name="aboutRef" onClick={handleClick} to="#">
+          <Link name="aboutRef" onClick={handleClick} to="/?scroll=about">
             About
           </Link>
         </li>
