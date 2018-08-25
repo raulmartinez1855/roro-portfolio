@@ -33,7 +33,7 @@ class About extends Component {
           is a copy of my resume:
         </p>
         <a download href={Resume}>
-          <button>Resume</button>
+          <span>Resume</span>
         </a>
         <p>
           When I am not coding, I am usually catching a movie with my wife (We
