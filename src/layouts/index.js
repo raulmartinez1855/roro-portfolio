@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Footer from '../components/Footer'
 import '../assets/sass/index.scss'
+import favicon from '../../public/favicon.ico'
 
 const Layout = ({ children, data }) => (
   <div>
@@ -12,6 +13,7 @@ const Layout = ({ children, data }) => (
         { name: 'description', content: 'Portfolio' },
         { name: 'keywords', content: 'react, gatsby' },
       ]}
+      link={[{ rel: 'favicon', type: 'image/png', href: `${favicon}` }]}
     />
     <div>{children()}</div>
     <Footer />

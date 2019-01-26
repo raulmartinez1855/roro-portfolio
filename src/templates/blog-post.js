@@ -6,7 +6,6 @@ import Menu from '../components/Menu'
 
 export default function Template({ data }) {
   const post = data.markdownRemark
-
   return (
     <div className="blog-post-layout">
       <Menu />
@@ -14,9 +13,6 @@ export default function Template({ data }) {
       <div className="blog-content-container">
         <div className="blog-content-copy">
           <h1 className="section-title">{post.frontmatter.title}</h1>
-          <p className="post-details">
-            posted: <span>{post.frontmatter.date}</span>
-          </p>
           <p className="post-details">
             by: <span>{post.frontmatter.author}</span>
           </p>
@@ -40,7 +36,6 @@ export const postQuery = graphql`
         path
         title
         author
-        date
         image
       }
     }

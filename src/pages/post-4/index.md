@@ -1,6 +1,5 @@
 ---
 path: '/blog/posts/4'
-date: '08-29-2018'
 title: 'Opposite of display: none'
 author: 'Raul Martinez'
 image: 'Sass.png'

@@ -1,10 +1,10 @@
 ---
 path: '/blog/posts/1'
-date: '07-17-2018'
 title: 'Hello World'
 author: 'Raul Martinez'
 image: 'Javascript.png'
-desc: 'Hello world! My name is Raul. A little bit about me. I have been a full-time Front-End Web Developer since...'
+desc:
+  'Hello world! My name is Raul. A little bit about me. I have been a full-time Front-End Web Developer since...'
 ---
 
 Hello world! My name is Raul. A little bit about me...

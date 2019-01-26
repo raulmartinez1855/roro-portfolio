@@ -21,8 +21,7 @@ const BlogPage = ({ data }) => (
               <div className="card-top">
                 <div className="card-header">
                   <div className="post-info">
-                    <span>{post.node.frontmatter.date}</span>
-                    <span>{post.node.frontmatter.author}</span>
+                    {/* <span>{post.node.frontmatter.author}</span> */}
                   </div>
                   <div className="post-image">
                     <img src={withPrefix(post.node.frontmatter.image)} alt="" />
@@ -52,7 +51,6 @@ export const pageQuery = graphql`
           frontmatter {
             title
             path
-            date
             author
             image
             desc

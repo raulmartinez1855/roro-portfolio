@@ -4,38 +4,37 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
- // You can delete this file if you're not using it
+// You can delete this file if you're not using it
 
-const path = require('path');
+const path = require('path')
 
-exports.createPages = ({boundActionCreators, graphql}) => {
-  const { createPage } = boundActionCreators;
-  const postTemplate = path.resolve('src/templates/blog-post.js');
+exports.createPages = ({ boundActionCreators, graphql }) => {
+  const { createPage } = boundActionCreators
+  const postTemplate = path.resolve('src/templates/blog-post.js')
   return graphql(`
-  {
-    allMarkdownRemark {
-      edges {
-        node {
-          html
-          id
-          frontmatter {
-            title
-            path
-            date
-            author
+    {
+      allMarkdownRemark {
+        edges {
+          node {
+            html
+            id
+            frontmatter {
+              title
+              path
+              author
+            }
           }
         }
       }
     }
-  }
   `).then(res => {
-    if(res.errors) {
-      return Promise.reject(res.errors);
+    if (res.errors) {
+      return Promise.reject(res.errors)
     }
-    res.data.allMarkdownRemark.edges.forEach(({node}) => {
+    res.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
         path: node.frontmatter.path,
-        component: postTemplate
+        component: postTemplate,
       })
     })
   })
