@@ -13,7 +13,7 @@ const Layout = ({ children, data }) => (
         { name: 'description', content: 'Portfolio' },
         { name: 'keywords', content: 'react, gatsby' },
       ]}
-      link={[{ rel: 'favicon', type: 'image/png', href: `${favicon}` }]}
+      link={[{ rel: 'favicon', type: 'image/x-icon', href: `${favicon}` }]}
     />
     <div>{children()}</div>
     <Footer />
