@@ -36,15 +36,10 @@ class Menu extends Component {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link name="aboutRef" to="/?scroll=about">
-              About
-            </Link>
-          </li>
-          {/* <li>
-            <Link name="projectsRef" onClick={this.handleClick} to="#">
+            <Link name="projectsRef" to="/projects">
               Projects
             </Link>
-          </li> */}
+          </li>
           <li>
             <Link to="/blog">Blog</Link>
           </li>

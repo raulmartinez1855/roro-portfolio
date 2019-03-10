@@ -17,15 +17,10 @@ const Dropdown = props => {
           </Link>
         </li>
         <li>
-          <Link name="aboutRef" onClick={handleClick} to="/?scroll=about">
-            About
-          </Link>
-        </li>
-        {/* <li>
-          <Link name="projectsRef" onClick={handleClick} to="#">
+          <Link name="projectsRef" onClick={handleClick} to="/projects">
             Projects
           </Link>
-        </li> */}
+        </li>
         <li>
           <Link onClick={props.close} to="/blog">
             Blog

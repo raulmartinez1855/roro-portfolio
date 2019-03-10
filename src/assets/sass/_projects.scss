@@ -1,26 +1,32 @@
 .projects {
   margin: 4rem 1rem 1rem 1rem;
-  button {
-    display: block;
-    cursor: pointer;
-    margin: 0 auto;
-    height: 3.5rem;
-    width: 10rem;
-    border-radius: 0.4rem;
-    background: #1ebba3;
-    transition: background-color 200ms ease-in;
-    overflow: hidden;
-    color: #fff;
-    font-size: 2rem;
-    &:hover {
-      background: #6fbcf9;
+  .project-wrapper {
+    max-width: 60rem;
+    margin: auto;
+  }
+  .project {
+    // margin-left: 5rem;
+    font-size: 0.6rem;
+    margin-left: 1rem;
+    @media (min-width: 650px) {
+      margin-left: 4rem;
+      font-size: 1.2rem;
     }
-  }
-  a {
-    text-decoration: none;
-  }
-  p {
-    font-size: 1.2rem;
-    color: $p-color;
+    &.variable {
+      margin-left: 0;
+      @media (min-width: 650px) {
+        margin-left: 2rem;
+      }
+    }
+    &.property {
+      @media (min-width: 650px) {
+        margin-left: 5rem;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: #0b1f4c;
+      font-weight: 600;
+    }
   }
 }

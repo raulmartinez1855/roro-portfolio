@@ -2,17 +2,9 @@ import React, { Component } from 'react'
 import Resume from '../assets/images/RAULMARTINEZ_Resume.pdf'
 
 class About extends Component {
-  componentDidMount() {
-    this.props.findPositions('aboutRef', this.aboutRef.offsetTop)
-  }
   render() {
     return (
-      <div
-        ref={e => {
-          this.aboutRef = e
-        }}
-        className="about"
-      >
+      <div className="about">
         <h2 className="section-title">About Me</h2>
         <p>
           Hello, I am Raul. Thank you for coming to my page. I am a developer
