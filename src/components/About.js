@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Link from 'gatsby-link'
 import Resume from '../assets/images/RAULMARTINEZ_Resume.pdf'
 
 class About extends Component {
@@ -10,8 +11,14 @@ class About extends Component {
           Hello, I am Raul. Thank you for coming to my page. I am a developer
           out of Miami, FL. Currently, I work as a Front End Developer for
           Sandals Resorts. Mostly, I work in HTML, SCSS, Javascript, and React
-          every day.
+          every day. Whenever, I have some downtime. I like to solve challenges
+          with sites like codewars.
         </p>
+        <div className="codewars">
+          <a href="https://www.codewars.com/users/raulmartinez1855/">
+            <img src="https://www.codewars.com/users/raulmartinez1855/badges/large" />
+          </a>
+        </div>
         <p>
           I began coding fulltime when I joined the Wyncode Academy in their
           19th cohort, on September 19th, 2017. I am very thankful to be in the
@@ -24,7 +31,7 @@ class About extends Component {
           If you would like to know more about my professional background, here
           is a copy of my resume:
         </p>
-        <a download href={Resume}>
+        <a className="resume" download href={Resume}>
           <span>Resume</span>
         </a>
         <p>

@@ -4,20 +4,30 @@ class Projects extends Component {
   projects = [
     {
       name: 'Timbit Dunker Game',
-      description: `'Whack-a-mole but with Tim Horton timbits. This game won 1st place at a hackathon at RBI headquarters(Owners of Tim Hortons, Burger King, and Popeyes)'`,
+      description:
+        'Whack-a-mole but with Tim Horton timbits. This game won 1st place at a hackathon at RBI headquarters(Owners of Tim Hortons, Burger King, and Popeyes)',
       github:
         'https://github.com/raulmartinez1855/wyncode-hackathon/tree/raul-martinez',
       demo: 'https://tender-sinoussi-aac2c6.netlify.com/',
     },
     {
+      name: 'Catch of the Day',
+      description:
+        'First React Course I took was building this application. After completing the course and learning about more about React. I recreated the application from scratch applying the concepts I learned',
+      github: 'https://github.com/raulmartinez1855/ReactSoloProject',
+      demo: 'https://elated-kowalevski-d97cd8.netlify.com/',
+    },
+    {
       name: 'Color Match Game',
-      description: `'first game ever made. It is a simple color matching game'`,
+      description:
+        'first game I ever made using React. It is a simple color matching game',
       github: 'https://github.com/raulmartinez1855/colors',
       demo: 'https://frosty-fermat-5aae61.netlify.com/',
     },
     {
       name: 'Addition Game',
-      description: `'Game that requires users to choose 4 numbers that add up to the number displayed before time runs out'`,
+      description:
+        'Game that requires users to choose 4 numbers that add up to the number displayed before time runs out',
       github: 'https://github.com/raulmartinez1855/adding-game',
       demo: 'https://jovial-jones-dcd1bc.netlify.com',
     },
@@ -34,13 +44,18 @@ class Projects extends Component {
               <div v key={i}>
                 <div className="project">&#123;</div>
                 <div className="project property">
-                  demo: <a href={o.demo}>{o.name}</a>,
+                  <strong>demo:</strong> <a href={o.demo}>{o.name}</a>,
                 </div>
                 <div className="project property">
-                  description: {o.description},
+                  <strong>description:</strong>{' '}
+                  <span>
+                    '{o.description}
+                    ',
+                  </span>
                 </div>
                 <div className="project property">
-                  github: <a href={o.github}>{o.github}</a>
+                  <strong>github:</strong>
+                  <a href={o.github}>{o.github}</a>
                 </div>
                 <div className="project">
                   &#125;
