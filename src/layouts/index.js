@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Footer from '../components/Footer'
 import '../assets/sass/index.scss'
-import favicon from '../../static/favicon.ico'
+import favicon from '../../static/faviicon.ico'
 
 const Layout = ({ children, data }) => (
   <div>
