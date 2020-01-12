@@ -14,8 +14,11 @@ class About extends Component {
           with sites like codewars.
         </p>
         <div className="codewars">
-          <a href="https://www.codewars.com/users/raulmartinez1855/">
-            <img src="https://www.codewars.com/users/raulmartinez1855/badges/large" />
+          <a href="https://www.codewars.com/users/Raul_/">
+            <img
+              alt="Codewars profile badge"
+              src="https://www.codewars.com/users/Raul_/badges/large"
+            />
           </a>
         </div>
         <p>
