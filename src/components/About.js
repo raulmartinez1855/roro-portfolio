@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Resume from '../assets/images/RAULMARTINEZ_Resume.pdf'
+import Resume from '../assets/images/Raul_Martinez.pdf'
 
 class About extends Component {
   render() {
@@ -8,10 +8,9 @@ class About extends Component {
         <h2 className="section-title">About Me</h2>
         <p>
           Hello, I am Raul. Thank you for coming to my page. I am a developer
-          out of Miami, FL. Currently, I work as a Front End Developer for
-          Sandals Resorts. Mostly, I work in HTML, SCSS, Javascript, and React
-          every day. Whenever, I have some downtime. I like to solve challenges
-          with sites like codewars.
+          out of Miami, FL. Currently, I work as a Software Developer for
+          Tracfone Wireless. Whenever, I have some downtime. I like to solve
+          challenges with sites like codewars.
         </p>
         <div className="codewars">
           <a href="https://www.codewars.com/users/Raul_/">

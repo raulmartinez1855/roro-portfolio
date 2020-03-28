@@ -1,5 +1,14 @@
 .about {
   margin: 1rem;
+
+  .codewars {
+    display: flex;
+    justify-content: center;
+    img {
+      max-width: 100%;
+    }
+  }
+
   .resume {
     text-decoration: none;
     display: block;
