@@ -10,8 +10,6 @@ After three weeks of developing this new site on my spare time. I am finally don
 
 Well... not "done." But, I am at a point where I feel comfortable publishing the site.
 
-It has been a really fun experience to make my portfolio. Especially, since I made it from scratch. I wanted to make sure I did not use any css frameworks.
+It has been a really fun experience to make my portfolio. Especially, since I made it from scratch, even the design which I found to be the most difficult part (shout to designers).
 
-In addition, I used [Gatsby.js](https://www.gatsbyjs.org/) to make the site which I did not have prior experience with. However, I do have experience with React so using Gatsby has been very fun.
-
-This is my first time running and publishing to a blog. I plan to keep it as an open format focused around code. I will be posting at least once per week.
+I used [Gatsby.js](https://www.gatsbyjs.org/) to make this site which I did not have prior experience with. However, I do have experience with React so using Gatsby has been very fun.
