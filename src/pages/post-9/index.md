@@ -38,5 +38,5 @@ The express server is triggered by CloudWatch every Monday morning right before 
 - SES
 - DynamoDB
 
-Here is a short video of the app running locally (not Headless like in production):
+Here is a short video of the app running locally (not Headless like in production), certain portions are blurred to protect personal information:
 [![Preview of Scraper Video](https://img.youtube.com/vi/3SaNlbaX5ls/0.jpg)](https://www.youtube.com/watch?v=3SaNlbaX5ls)
