@@ -21,18 +21,18 @@ class Projects extends Component {
       demo: 'https://idanias-listings.netlify.com/',
     },
     {
-      name: 'Catch of the Day',
-      description:
-        'First React Course I took was building this application. After completing the course and learning about more about React. I recreated the application from scratch applying the concepts I learned',
-      github: 'https://github.com/raulmartinez1855/ReactSoloProject',
-      demo: 'https://elated-kowalevski-d97cd8.netlify.com/',
+      name: 'Darker Dungeon Game',
+      description: `Game built on React, used it to learn hooks better. This game is meant for Desktop and laptops, where you have access 
+      to the arrow keys. You move your way through the randomly generated maps to find the treasure.`,
+      github: 'https://github.com/raulmartinez1855/dark-dungeon',
+      demo: 'https://darker-dungeon.netlify.app/',
     },
     {
-      name: 'Color Match Game',
+      name: 'Tap Turn Swipe Game',
       description:
-        'first game I ever made using React. It is a simple color matching game',
-      github: 'https://github.com/raulmartinez1855/colors',
-      demo: 'https://frosty-fermat-5aae61.netlify.com/',
+        'This is a game built on React for mobile and tablet browsers. It was inspired by the kids game Bop-It.',
+      github: 'https://github.com/raulmartinez1855/tap-turn-swipe-game',
+      demo: 'https://tapturnswipe.netlify.app/',
     },
     {
       name: 'Addition Game',
