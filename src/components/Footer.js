@@ -11,17 +11,17 @@ export default class Footer extends Component {
         <div className="images-container">
           <button>
             <a href="https://github.com/raulmartinez1855">
-              <img src={GitHub} alt="" />
+              <img src={GitHub} alt="Raul's Github" />
             </a>
           </button>
           <button>
             <a href="https://www.linkedin.com/in/raulmartinez1/">
-              <img src={LinkedIn} alt="" id="size-fix" />
+              <img src={LinkedIn} alt="Raul's LinkedIn" id="size-fix" />
             </a>
           </button>
           <button>
             <a href="mailto:raulmartinez1855@gmail.com">
-              <img src={Plane} alt="" id="color-fix" />
+              <img src={Plane} alt="Send an email to Raul" id="color-fix" />
             </a>
           </button>
         </div>

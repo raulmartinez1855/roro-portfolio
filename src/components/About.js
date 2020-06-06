@@ -9,17 +9,9 @@ class About extends Component {
         <p>
           Hello, I am Raul. Thank you for coming to my page. I am a developer
           out of Miami, FL. Currently, I work as a Software Developer for
-          Tracfone Wireless. Whenever, I have some downtime. I like to solve
-          challenges with sites like codewars.
+          Tracfone Wireless.
         </p>
-        <div className="codewars">
-          <a href="https://www.codewars.com/users/Raul_/">
-            <img
-              alt="Codewars profile badge"
-              src="https://www.codewars.com/users/Raul_/badges/large"
-            />
-          </a>
-        </div>
+
         <p>
           I began coding fulltime when I joined the Wyncode Academy in their
           19th cohort, on September 19th, 2017. I am very thankful to be in the
@@ -35,12 +27,6 @@ class About extends Component {
         <a className="resume" download href={Resume}>
           <span>Resume</span>
         </a>
-        <p>
-          When I am not coding, I am usually catching a movie with my wife (We
-          are AMC A-List members, It's the best). I love hanging out with my dog
-          Knox and cat Koda. Also, I am a powerlifter, so pretty much I like to
-          pick up heavy things and put them back down.
-        </p>
       </div>
     )
   }
