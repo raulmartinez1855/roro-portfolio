@@ -9,7 +9,7 @@ class Menu extends Component {
   state = { open: false }
 
   isOpen = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return { open: !prevState.open }
     })
   }
@@ -20,7 +20,7 @@ class Menu extends Component {
 
   render() {
     return (
-      <div ref={ele => (this.menuDiv = ele)} className="menu-component">
+      <div ref={(ele) => (this.menuDiv = ele)} className="menu-component">
         <h1>
           <Link to="/">RAUL</Link>
         </h1>
@@ -40,9 +40,9 @@ class Menu extends Component {
               Projects
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/blog">Blog</Link>
-          </li>
+          </li> */}
           <li>
             <a
               href="https://www.codewars.com/users/Raul_/"

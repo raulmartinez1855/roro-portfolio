@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Resume from '../assets/images/Raul_Martinez.pdf'
+import Resume from '../assets/images/Raul_Martinez_10_31_2020.pdf'
 
 class About extends Component {
   render() {
@@ -11,6 +11,7 @@ class About extends Component {
           out of Miami, FL. Currently, I work as a Software Developer for
           Tracfone Wireless.
         </p>
+
         <p>
           I began coding fulltime when I joined the Wyncode Academy in their
           19th cohort, on September 19th, 2017. I am very thankful to be in the
