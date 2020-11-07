@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Resume from '../assets/images/Raul_Martinez_10_31_2020.pdf'
+import Resume from '../assets/images/Raul_Martinez_11_5_2020.pdf'
 
 class About extends Component {
   render() {
