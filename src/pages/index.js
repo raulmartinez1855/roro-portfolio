@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import About from '../components/About'
 import Menu from '../components/Menu'
-import MartinezRaul from '../assets/images/Optimized-MartinezRaul.jpg'
+import MartinezRaul from '../assets/images/Raul.jpg'
 
 class IndexPage extends Component {
   render() {
